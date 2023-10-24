@@ -11,13 +11,13 @@ The temperature-stabilization system in this assignment consists of 5 processes.
 **External processes:**
 
 $$
-\text{externalTemp} \longleftarrow \left(3 \,\cdot \text{externalTemp} + 2\,\cdot \text{centralTemp} \right) / 5
+\text{externalTemp} \longleftarrow \left(3 \cdot \text{externalTemp} + 2\cdot \text{centralTemp} \right) / 5
 $$
 
 **Central process:**
 
 $$
-\text{centralTemp} \longleftarrow \left(2 \,\cdot \text{centralTemp} + \sum_{i=1}^4 \text{externalTemp}_i \right) / 6
+\text{centralTemp} \longleftarrow \left(2 \cdot \text{centralTemp} + \sum_{i=1}^4 \text{externalTemp}_i \right) / 6
 $$
 
 Initially, each external process will send its temperature to the central process. If all four temperatures are the same (or sufficiently similar) as those sent by the four processes during the last iteration, the system has stabilized. In this case, the central process will notify each external process that it is now finished (along with the central process itself), and each process will output the final stabilized temperature. If the system has not yet become stable, the central process will send its new (updated) temperature to each of the external processes and await their replies. The processes will continue to run until the temperature has stabilized.
