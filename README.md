@@ -9,13 +9,17 @@ In this assignment, you will implement a basic temperature-stabilization system 
 The temperature-stabilization system in this assignment consists of 5 processes. Four **external** processes that send their individual temperatures to a **central** process. The central process will then reply by sending its own calculation of the temperature to the external processes. Once the temperature of the entire system has stabilized, the central process will print a message indicating that the system has stabilized and processes will terminate. Each process will receive (or have) its initial temperature upon creation and will recalculate a new temperature according to two formulas:
 
 **External processes:**
+
 $$
 \text{externalTemp} \longleftarrow \left(3 \,\cdot \text{externalTemp} + 2\,\cdot \text{centralTemp} \right) / 5
 $$
-**Central process:**  
+
+**Central process:**
+
 $$
 \text{centralTemp} \longleftarrow \left(2 \,\cdot \text{centralTemp} + \sum_{i=1}^4 \text{externalTemp}_i \right) / 6
 $$
+
 Initially, each external process will send its temperature to the central process. If all four temperatures are the same (or sufficiently similar) as those sent by the four processes during the last iteration, the system has stabilized. In this case, the central process will notify each external process that it is now finished (along with the central process itself), and each process will output the final stabilized temperature. If the system has not yet become stable, the central process will send its new (updated) temperature to each of the external processes and await their replies. The processes will continue to run until the temperature has stabilized.
 
 Each external process will be uniquely identified by a command-line parameter. The first parameter to each external process will be its unique number: 1, 2, 3, or 4. The second parameter will be its initial temperature. The central server will be passed one parameter, i.e., its initial temperature. 
