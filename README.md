@@ -1,6 +1,30 @@
 # Temperature stabilization using inter-process communication
 
-### This is a Linux/Unix OS assignment. It is not an OS/161 Assignment. 
+### This is a Linux/Unix OS assignment. It is not an OS/161 Assignment
+
+ This means that you will not write code for OS/161, you will write and test your code on a Linux or any Unix-based OS, e.g., any Linux server, AWS, Mac OS X (Terminal), and the Linux environment that comes with your CSE4001 container. 
+
+If you use the CSE4001 container, I suggest that you clone the sample code (see link to sample code below) or write your own code in the container’s directory `/root/workspace/`. To run the server and client processes, open multiple terminal windows on the same container. To do that, you can: 
+
+1. **Using the Docker app**. Run the CSE4001 container from the Docker app and open a terminal, i.e., use the option `Open in terminal` that is provided by the drown-down `Actions` menu. See figure below: 
+
+   ![image-20231101100027110](./image-20231101100027110.png) 
+
+   Once the terminal is open, choose `Open in external terminal` and then run the `bash` shell by typing bash on the command line. See figure below: 
+
+   ![image-20231101100606409](./image-20231101100606409.png) 
+
+   
+
+2. **Open multiple terminals from the command line**. To open another terminal on the same active container, type the following command on another terminal. In this case, the terminal will already start running `bash` shell.
+
+```shell
+docker exec -it cse4001 bash
+```
+
+3. Go to the `/root/workspace/` directory and clone the sample code or create a directory where you will write your code for the assignment. 
+
+   ![image-20231101101522145](./image-20231101101522145.png)
 
 ### Description
 
@@ -26,15 +50,14 @@ Each external process will be uniquely identified by a command-line parameter. T
 
 ### Implementation details
 
-- Write a Bash script or program that runs you solution.
-- The central server can be a multi-connection server (optional). Here, you can choose to implement the multi-connection by using child processes. 
+- Add some instructions on the `README.md` file on how to run your program.
 - Don't worry about killing Zombies. Let them be.  
 - The simplest way to start the implementation is to use the sample source code that has been provided as examples in Canvas. Some helpful source-code examples are: 
   - https://github.com/eraldoribeiro/tcp_client_server
 
 ### What to submit
 
-Add/Commit/Push the source code of your program into the GitHub repository for the assignment. Do not upload executable files or temporary files that result from the compilation process. 
+`Add/Commit/Push` the source code of your program into the GitHub repository for the assignment. Do not upload executable files or temporary files that result from the compilation process. 
 
 Describe the execution of your program in the repository's `README.md` file. Here, include figures of relevant screenshots showing the execution of the entire system. For example, if you run each process in a separate terminal, you can capture all terminals working side-by-side into a single screenshot. Submissions without a `README.md` and screenshots showing the program's execution will suffer a 20-point deduction in the grade in the assignment grade. 
 
