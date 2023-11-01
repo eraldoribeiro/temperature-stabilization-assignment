@@ -50,7 +50,7 @@ Each external process will be uniquely identified by a command-line parameter. T
 
 ### TCP sockets for process communication
 
-![TCP-socket connection]([http://www.google.com.au/images/nav_logo7.png](https://media.geeksforgeeks.org/wp-content/uploads/20220330131350/StatediagramforserverandclientmodelofSocketdrawio2-448x660.png))
+![TCP-socket connection]([http://www.google.com.au/images/nav_logo7.png](https://media.geeksforgeeks.org/wp-content/uploads/20220330131350/StatediagramforserverandclientmodelofSocketdrawio2-448x660.png)
 
 ### Implementation details
 
