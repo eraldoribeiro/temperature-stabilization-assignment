@@ -48,12 +48,15 @@ Initially, each external process will send its temperature to the central proces
 
 Each external process will be uniquely identified by a command-line parameter. The first parameter to each external process will be its unique number: 1, 2, 3, or 4. The second parameter will be its initial temperature. The central server will be passed one parameter, i.e., its initial temperature. 
 
+### TCP sockets for process communication
+
+![TCP-socket connection]([http://www.google.com.au/images/nav_logo7.png](https://media.geeksforgeeks.org/wp-content/uploads/20220330131350/StatediagramforserverandclientmodelofSocketdrawio2-448x660.png))
+
 ### Implementation details
 
 - Add some instructions on the `README.md` file on how to run your program.
 - Don't worry about killing Zombies. Let them be.  
-- The simplest way to start the implementation is to use the sample source code that has been provided as examples in Canvas. Some helpful source-code examples are: 
-  - https://github.com/eraldoribeiro/tcp_client_server
+- The simplest way to start the implementation is to use the sample source code from the following link: https://github.com/eraldoribeiro/tcp_client_server, or any example in which two processes exchange some message packaged as a C structure (i.e., `struct`). Given an example with two processes communicating via TCP sockets, you just need to extend the example to implement the solution of the assignment. 
 
 ### What to submit
 
