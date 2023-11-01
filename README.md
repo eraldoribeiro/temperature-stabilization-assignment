@@ -48,7 +48,7 @@ Initially, each external process will send its temperature to the central proces
 
 Each external process will be uniquely identified by a command-line parameter. The first parameter to each external process will be its unique number: 1, 2, 3, or 4. The second parameter will be its initial temperature. The central server will be passed one parameter, i.e., its initial temperature. 
 
-### TCP sockets for process communication
+### Overview diagram showing TCP sockets for process communication
 
 ![TCP-socket connection](https://media.geeksforgeeks.org/wp-content/uploads/20220330131350/StatediagramforserverandclientmodelofSocketdrawio2-448x660.png)
 
