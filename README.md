@@ -2,7 +2,7 @@
 
 ### This is a Linux/Unix OS assignment. It is not an OS/161 Assignment
 
- This means that you will not write code for OS/161, you will write and test your code on a Linux or any Unix-based OS, e.g., any Linux server, AWS, Mac OS X (Terminal), and the Linux environment that comes with your CSE4001 container. 
+This means that you will not write code for OS/161. Instead, you will write and test your code on a Linux or any Unix-based OS, e.g., the Linux environment that comes with your CSE4001 container or any Linux machine, AWS, Mac OS X (Terminal). 
 
 If you use the CSE4001 container, I suggest that you clone the sample code (see link to sample code below) or write your own code in the container’s directory `/root/workspace/`. To run the server and client processes, open multiple terminal windows on the same container. To do that, you can: 
 
@@ -13,8 +13,6 @@ If you use the CSE4001 container, I suggest that you clone the sample code (see 
    Once the terminal is open, choose `Open in external terminal` and then run the `bash` shell by typing bash on the command line. See figure below: 
 
    ![image-20231101100606409](./image-20231101100606409.png) 
-
-   
 
 2. **Open multiple terminals from the command line**. To open another terminal on the same active container, type the following command on another terminal. In this case, the terminal will already start running `bash` shell.
 
