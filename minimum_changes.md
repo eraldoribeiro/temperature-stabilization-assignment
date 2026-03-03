@@ -1,0 +1,13 @@
+# List of changes to be made to complete the temperature-stabilization assignment
+
+The following is a list of minimum changes that need to be made to the sample code. The list is not complete or exhaustive. You are free to change (or extend) the sample code in anyway you need to complete the assignment. 
+
+- **Make sure external processes and central process iterate in infinite loops**. The system consists of processes running on infinite loops until the temperature reaches a stable value. As a result, you will need to ensure that all processes: server (central) and clients (external) run under `while` loops. Specifically, add a `while` loop in the code of the external process.
+- **Termination condition**. There is a termination condition based on the temperature reaching a stable state. The central process is the one that checks for the stable state of the system by comparing the temperatures sent by the external processes. Specifically, the central process detects that the temperatures have not changed significantly from the previous iteration, and then sends a `message` or value (i.e., a terminal flag) to the external processes to let them know they can terminate. Once the “termination flag” is sent to the external processes, the central process can also terminate.
+- **Calculate the averages correctly**. The current calculation of the averages in the central process and external process (in the sample code) is not the calculation asked by the assignment description. As a result, the calculations of the temperatures in the central and external processes must be changed.
+- **Use negative temperature as a termination flag or add the termination-flag field to the message `struct`**. For the termination flag, you can use a negative value of temperature (It is okay for this assignment as we can assume the temperatures are in Kelvin) or you can add a field to the message `struct`. Any of these two options is fine.
+- **Remember to add the screenshot showing the processes working**. The screenshot should look like the one in the following figure, which shows all processes running, each process in its own terminal. This screenshot is also shown in the [README.md](http://README.md) file of the sample-code repository.
+    
+    ![](https://github.com/eraldoribeiro/tcp_client_server/blob/main/sample_run.jpg?raw=true)
+    
+- **All initial temperatures are arbitrary, i.e., you choose them**. The termination threshold is also arbitrary. Maybe `0.1` is a good value. The starter code of the central process (i.e., server.c) does not receive any temperature argument. You can change the code to make it receive an input value or simply hardcode the initial temperature in the code of the central process.
