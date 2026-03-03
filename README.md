@@ -63,9 +63,7 @@ gh repo clone <assignment_repository_url>
 ### :fire: A common question about the example code in the previous link is: 
 
 - 🤔 **Question**: The example code seems to solve the assignment. What is left to be done?
-- :high_brightness: **The answer**: Please, read the assignment description and the code to identify the missing parts that need to be completed. 
-
-[Here is a list of minimal changes](./minimum_changes.md) 
+- :high_brightness: **The answer**: Please, read the assignment description and the code to identify the missing parts that need to be completed ([Here is a list of minimal changes](./minimum_changes.md)). 
 
 ### If you use the CSE4001 container
 
