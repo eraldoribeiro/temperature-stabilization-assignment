@@ -60,7 +60,7 @@ gh repo clone <assignment_repository_url>
 8. **Commit & push**: include source code only (no binaries or build artifacts). Make sure `README.md` contains build/run instructions (commands, args, ports).
 9. **Submit**: paste your repository URL into the Canvas submission box.
 
-### :fire: A common question about the example code in the previous link is: 
+### :fire: A common question about the starter code is: 
 
 - 🤔 **Question**: The example code seems to solve the assignment. What is left to be done?
 - :high_brightness: **The answer**: Please, read the assignment description and the code to identify the missing parts that need to be completed ([Here is a list of minimal changes](./minimum_changes.md)). 
